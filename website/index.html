@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <link rel="stylesheet" href="./styles.css">
     </head>
 
     <body>
-        <header></header>
         <title>My Personal Webpage</title>
-        <h1>Troy Gardner II</h1>
-        <img src="./headshot.png" width="327" height="328">
-        <br></br>
-        <a href="./contact.html">Contact Me</a>
-        <a href="./interests.html".>My Interests</a>
-        <div id="About">
+        
+        <!-- NAVIGATION -->
+        <nav>
+            <ul class="navbar">
+                <li><a href="./contact.html">Contact Me</a></li>
+                <li><a href="./interests.html".>My Interests</a></li>
+            </ul>
+        </nav>
+
+        <!-- HEADER -->
+        <header>
+            <img src="./headshot.png" width="250" height="251">
+            <h1 class="name">Troy Gardner II</h1>
+        </header>
+
+        <!-- CONTENT -->
+         <section class="column">
             <h2>About Me</h2>
             <p>I am a programmer with experience in game development on Roblox.</p>
-            <p>I primarily work on back-end systems but will ocassionally work on the frontend, where I mainly employ math skills to design visually appealing in-game systems.</p>
-            <p>The world of programming and game development has intrigued me since I was young, and I enjoy the intellectual challenges that it presents.</p>
+            <p>I primarily work on back-end systems. Though occasionally, I  ocassionally work on the frontend, where I mainly employ math skills to design visually appealing mechanisms.</p>
+            <p>I have always been fascinated by the world of programming and game development has intrigued me since I was young, and I enjoy the intellectual challenges that it presents.</p>
             <p>I hope to gain exposure to more professional roles and build more experience in this field.</p>
-        <h3>Projects</h3>
-        <ul>
-            <li>Naruto Rougelike Closed-Community Game: This was an open-world Rougelike I helped maintain on Roblox around late 2021 to mid 2022. The specific project was the most popular Naruto rougelike at the time.</li>
-            <li>Roblox United Kingdom: I joined this roleplay group's development team as a Interim/Junior Developer in 2021 and I am still a member of the team.</li>
-            <li>Roblox Netherlands: I am currently helping a roleplay group based in the Netherlands to rebuild their codebase.</li>
-        </ul>
+         </section>
+
+         <section class="column">
+            <h2>Projects</h2>
+            <ul>
+                <li>Naruto Rougelike Closed-Community Game: This was an open-world Rougelike I helped maintain on Roblox around late 2021 to mid 2022. The specific project was the most popular Naruto rougelike at the time.</li>
+                <li>Roblox United Kingdom: I joined this roleplay group's development team as a Interim/Junior Developer in 2021 and I am still a member of the team.</li>
+                <li>Roblox Netherlands: I am currently helping a roleplay group based in the Netherlands to rebuild their codebase.</li>
+            </ul>
+         </section>
+
+        
         
         </div>
-        <footer></footer>
+        <section class="column">
+            <footer>
+                <h2>Primary Contact</h2>
+                <p>Email: tgardner2@my.waketech.edu</p>
+            </footer>
+        </section>
+
     </body>
 </html>
