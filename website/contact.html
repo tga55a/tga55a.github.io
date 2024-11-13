@@ -9,17 +9,53 @@
 <body>
     <nav>
         <ul class="navbar">
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./contact.html">Contact Me</a></li>
             <li><a href="./interests.html".>My Interests</a></li>
         </ul>
     </nav>
-    <section class="column">
+
+    <section class="column box">
         <h2>Contact Me</h2>
         <ul>
             <li>Name: Troy A. Gardner II</li>
             <li>Email: tgardner2@my.waketech.edu</li>
             <li>Phone: 000-000-000</li>
         </ul>
+    </section>
+
+    <section class="container">
+
+        <form action="form" method="POST" class="column box">
+
+            <label for="name">Name:</label>
+            <input class="button" type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input class="button" type="email" id="email" name="email" required>
+            <br><br>
+        
+
+            <label for="phone">Phone Number:</label>
+            <input class="button" type="tel" id="phone" name="phone" pattern="\d{3}-\d{3}-\d{4}">
+            <br><br>
+        
+            <p>Question Type:</p>
+            <input class="button" type="radio" id="question" name="inquiry_type" value="Question">
+            <label for="question">Question</label><br>
+            <input class="button" type="radio" id="comment" name="inquiry_type" value="Comment">
+            <label for="comment">Comment</label><br>
+            <input class="button" type="radio" id="suggestion" name="inquiry_type" value="Suggestion">
+            <label for="suggestion">Suggestion</label>
+            <br><br>
+        
+            <label for="message">Message:</label><br>
+            <textarea class="button" id="message" name="message" rows="4" cols="50" minlength="10" required></textarea>
+            <br><br>
+            <button class="button" type="submit">Submit</button>
+        </form>
+        
     </section>
 </body>
 </html>

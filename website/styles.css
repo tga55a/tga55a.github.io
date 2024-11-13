@@ -8,28 +8,23 @@ body {
     margin: 0;
 }
 
-nav {
-    position: fixed;
-}
 .name {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: block;
     font-weight: bold;
 }
 
-.navbar{
-    list-style-type: none; 
+.navbar {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    position:sticky;
-    top:0;
-    overflow: hidden;
-    background-color:#e0e7ff;
-    height:auto;
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
-.navbar li{
-    float: left;
+.navbar li {
     border-right: 1px solid #475671;
 }
 
@@ -37,27 +32,82 @@ nav {
     border-right: none;
 }
 
-.navbar li a{
+.navbar li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 10px;
     text-decoration: none;
     background-color: #3e4249;
+    font-size: 2vw; 
+    transition: background-color 0.3s ease;
 }
 
-.navbar li a:hover{
-    color: #ffffff;
+.navbar li a:hover {
     background-color: #475671;
 }
 
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+.navbar li a:focus {
+    background-color: #a1b1dd; 
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: stretch; 
+    background-color: #3e4249;
+    padding: 20px 20px;
+    height: 480px;
+    gap: 10px; 
+}
+
 .column {
-    border: 3px #aaacb3;
+    flex-grow: 1; 
+    flex-basis: 30%;
+    box-sizing: border-box; 
+    border: 3px solid #aaacb3;
     background-color: #b3b8bc;
     border-radius: 5px;
-    margin: 2px;
 }
 
 .column ul {
     list-style-type: none;
+}
+
+.box {
+    background-color: #ffffff33;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    overflow: auto; 
+}
+
+.button {
+    background-color: #b3b8bc42;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.image {
+    position: relative;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.image:hover {
+    filter: brightness(50%);
 }
